@@ -2,13 +2,13 @@
 
 This is a web app built using React, Node/Express.js, MongoDB, and Cloudinary CDN. It allows users to add, edit, and view movie data. Movie data includes movie title, rating, star category, genre, and movie poster image. A separate page allows users to add and manage movie genres.
 
-Features:
+**Features:**
 
 
 
 
 
-Home Page
+## Home Page
 
 
 The home page displays a list of all movies available in the database. For each movie, it shows the movie title, rating, star category, genre badge, and movie poster image. The rating is displayed as a star from 1 to 5.
