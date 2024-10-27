@@ -7,7 +7,6 @@ This is a web app built using React, Node/Express.js, MongoDB, and Cloudinary CD
 
 
 
-
 ## Home Page
 
 
