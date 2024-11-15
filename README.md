@@ -6,7 +6,7 @@ This is a web app built using React, Node/Express.js, MongoDB, and Cloudinary CD
 
 
 
-## Home Page
+## Home Page 
 
 
 The home page displays a list of all movies available in the database. For each movie, it shows the movie title, rating, star category, genre badge, and movie poster image. The rating is displayed as a star from 1 to 5.
