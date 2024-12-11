@@ -20,13 +20,13 @@ const NewMovie = () => {
     const [special, setSpecial] = useState(movieToEdit ? movieToEdit.special : []);
     const [errors, setErrors] = useState({ title: '', description: '', rating: '', image: '', checkboxes: '' });
 
-    console.log(special);
-
     useEffect(() => {
         if (movieToEdit && movieToEdit.image) {
             setImagePreview(movieToEdit.image);
         }
     }, [movieToEdit]);
+
+    
 
     const validateForm = () => {
         const newErrors = {};
@@ -45,7 +45,7 @@ const NewMovie = () => {
     const handleSubmit = async (event) => {
         event.preventDefault();
 
-        if (validateForm()) {
+        if (validateForm()) {            
             const formData = new FormData();
             formData.append('id', movieToEdit ? movieToEdit.id : nanoid());
             formData.append('title', title);
@@ -60,6 +60,7 @@ const NewMovie = () => {
                         headers: { 'Content-Type': 'multipart/form-data' },
                     });
                 } else {
+                    
                     await axios.post(API_URL, formData, {
                         headers: { 'Content-Type': 'multipart/form-data' },
                     });
